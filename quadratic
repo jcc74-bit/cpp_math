@@ -1,0 +1,50 @@
+// Jiaxin chen
+// pd 7
+// quadratic formula
+
+#include <iostream>
+#include  <math.h>
+
+
+using namespace std;
+
+
+int main () {
+   double a, b, c, discriminant, x1, x2, i1, i2, numpos, numneg, deno; //declared multiple variables
+   cout << "Enter the coefficients as a, b, c : ";
+   cin >> a >> b >> c;
+   discriminant = pow(b, 2) - (4 * a * c);
+   deno = (2 * a);
+   numpos = (-b + discriminant);
+   numneg = (-b - discriminant);
+   x1= numpos/deno;
+   x2= numneg/deno;
+   i1= sqrt((abs(discriminant))) / (2 * a);
+   i2= sqrt(abs((discriminant))) / (2 * a);
+
+
+   if (discriminant > 0) {
+       cout << "The discriminant is positive so there is two real solutions \n";
+       cout << "The two real roots for the equation: \n";
+       cout << a << "x^2 + " << b << "x + " << c << " = 0" << endl;
+       cout << "is x = " << x1 << " and x = " << x2 << " \n";
+   }
+   else if (discriminant == 0) {
+       cout << "The discriminant is equal to zero so there is one real solution \n";
+       cout << "The real root for the equation: \n";
+       cout << a << "x^2 + " << b << "x + " << c << " = 0" << endl;
+       cout << "is x = " << x1 << " \n";
+   }
+   else if (discriminant < 0) {
+       cout << "The discriminant is negative so there is two complex solution \n";
+       cout << "The two imaginary roots for the equation: \n";
+       cout << a << "x^2 + " << b << "x + " << c << " = 0 is" << endl;
+       cout << "x = "<<(-1 * b) / (2 * a)<<" + "<<i1<<"i\n";
+       cout << "x = "<<(-1 * b) / (2 * a)<<" - "<<i2<<"i";
+   }
+
+
+}
+
+
+
