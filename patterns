@@ -1,0 +1,88 @@
+// Jiaxin Chen
+// pd7
+//pattern
+
+#include <iostream>
+using namespace std;
+int main () {
+    int rows;
+    cout << "Enter the amount of rows : ";
+    cin >> rows;
+    cout << endl;
+    
+        cout << "Pattern 1 : ";
+        cout << endl;
+        cout << endl;
+    for (int i2 = 1; i2 <= rows; i2++){
+        for (int i = 1; i<= rows; i++){
+            cout << "*";
+        }
+        cout << endl;
+        }
+        cout << endl;
+        
+        cout << "Pattern 2 : ";
+        cout << endl;
+        cout << endl;
+    for (int i2 = 1; i2 <= rows; i2++){
+        for (int i = 1; i<= i2; i++){
+            cout << "*";
+        }
+        cout << endl;
+        }
+        cout << endl;
+        
+        cout << "Pattern 3 : ";
+        cout << endl;
+        cout << endl;
+    for (int i2 = rows; i2 >= 1 ; i2--){
+        for (int i = 1; i<= i2; i++){
+            cout << "*";
+        }
+        cout << endl;
+        }
+        cout << endl;
+        
+        cout << "Patern 4 : ";
+        cout << endl;
+        cout << endl;
+    for (int i2 = rows - 1; i2 >= 0; i2--){
+        for (int i = 1; i <= i2; i++){
+            cout << " ";
+        }
+        for (int i = rows - 1; i >= i2; i--) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+    cout << "Pattern 5 : ";
+    cout << endl;
+    cout << endl;
+    for (int i2 = rows ; i2 >= 0; i2--){
+        for (int i = i2-1; i >= 0; i--){
+            cout << "*";
+        }
+        cout << endl;
+        for (int i = rows ; i >= i2; i--) {
+            cout << " ";
+        }
+    }
+    
+    cout << endl;
+    cout << "Pattern 6 : ";
+    cout << endl;
+    cout << endl;
+    for (int i2 = rows - 1; i2 >= 0; i2--){
+        for (int i = 1; i <= i2; i++){
+            cout << " ";
+        }
+        for (int i = rows - 1; i >= i2; i--) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+}
+
