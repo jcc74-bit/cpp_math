@@ -1,0 +1,36 @@
+// Name: Jiaxin Chen
+// PD: 7
+// Program: Coordinate Geo
+
+
+#include <iostream>
+#include <math.h>
+
+
+//  pow(x,y) = x^y
+//  sqrt(x) = square root of x
+//  abs(a) = absolute value of a
+
+
+using namespace std;
+
+
+int main() {
+   double x1, x2, y1, y2, slope, midpointx, midpointy, distance ;
+   cout << "Enter 4 coordinate points as x1, x2, y1, y2 : ";
+   cin >> x1 >> y1 >> x2 >> y2 ;
+   cout << "your first coordinate is ( " << x1 << ", " << y1 <<" ) \n" ;
+   cout << "your second coordinate is ( " << x2 << ", " << y2 <<" ) \n" ;
+   slope = (y2-y1)/(x2-x1);
+   cout << "the slope of ( " << x1 << ", " << y1 <<" ) and ( " << x2 << ", " << y2 <<" ) is "<< slope <<" \n";
+   midpointx = (x1+x2)/2;
+   midpointy = (y1+y2)/2;
+   cout << "the midpoint of ( " << x1 << ", " << y1 <<" ) and ( " << x2 << ", " << y2 <<" ) is ( " << midpointx << ", " << midpointy <<" ) \n";
+   distance = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+   cout << "the distance of ( " << x1 << ", " << y1 <<" ) and ( " << x2 << ", " << y2 <<" ) is " << distance <<" " ;
+
+
+}
+
+
+
